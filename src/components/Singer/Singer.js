@@ -1,4 +1,5 @@
 import React from "react";
+import "./Singer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
@@ -9,7 +10,7 @@ const Singer = (props) => {
     <div className="col-md-4 mb-5">
       <div className="card" style={{ width: "19rem" }}>
         <img src={photo} className="card-img-top img-thumbnail" alt="..." />
-        <div className="card-body">
+        <div className="card-body bg-light">
           <h5 className="card-title">{name}</h5>
           <hr />
           <p className="card-text">
@@ -26,7 +27,7 @@ const Singer = (props) => {
           </p>
           <button
             onClick={() => props.handleAddToCart(props.singerInfo)}
-            className="btn btn-secondary"
+            className="btn btn-warning text-white"
           >
             <FontAwesomeIcon className="me-2" icon={faShoppingCart} />
             Add to cart

@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUsers } from "@fortawesome/free-solid-svg-icons";
+import { faUsers, faDollarSign } from "@fortawesome/free-solid-svg-icons";
 import SingerBriefInfo from "../SingerBriefInfo/SingerBriefInfo";
 
 const Cart = (props) => {
@@ -12,10 +12,13 @@ const Cart = (props) => {
   return (
     <div className="border p-2">
       <h4>
-        <FontAwesomeIcon className="me-2" icon={faUsers} />
+        <FontAwesomeIcon className="me-2 text-warning" icon={faUsers} />
         Singers Added: {cart.length}
       </h4>
-      <p>Total Cost: $ {total}</p>
+      <h5>
+        <FontAwesomeIcon className="me-2 text-warning" icon={faDollarSign} />
+        Total Cost: $ {total}
+      </h5>
 
       {cart.map((singerInfo) => (
         <SingerBriefInfo

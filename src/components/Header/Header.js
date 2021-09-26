@@ -1,14 +1,22 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
-    <div className="text-center bg-dark text-white py-3">
-      <h1>Singing Superstars</h1>
+    <div className="text-center  bg-light py-3">
+      <h1 className="fw-bolder">
+        Singing Superstars
+        <sup>
+          <span className="badge bg-warning text-white ms-2">Pro</span>
+        </sup>
+      </h1>
       <p>
         <small>Singing That Comes From The Soul</small>
       </p>
       <p>
-        Total Budget: <span className="fw-bold">2000 million</span>
+        <FontAwesomeIcon className="me-2 text-warning" icon={faDollarSign} />
+        Total Budget: <span className="fw-bold">2000 million dollar</span>
       </p>
     </div>
   );
