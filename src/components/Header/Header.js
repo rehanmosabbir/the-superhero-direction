@@ -12,12 +12,14 @@ const Header = () => {
         </sup>
       </h1>
       <p>
-        <small>Singing That Comes From The Soul</small>
+        <small className="text-warning fw-bolder">
+          Singing That Comes From The Soul
+        </small>
       </p>
-      <p>
+      <h5>
         <FontAwesomeIcon className="me-2 text-warning" icon={faDollarSign} />
         Total Budget: <span className="fw-bold">2000 million dollar</span>
-      </p>
+      </h5>
     </div>
   );
 };
