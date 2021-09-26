@@ -2,14 +2,8 @@
 
 https://singing-superstars-pro.netlify.app/
 
-## Available Scripts
+## Singing Superstars Pro Features:
 
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- This website is for displaying singing superstars profile
+- One can use this website for knowing superstar singer's name, age, earnings, country and role.
+- By clicking "Add to cart" button one can see the number of the added singer, total cost as well as brief info of the superstars into the cart.
