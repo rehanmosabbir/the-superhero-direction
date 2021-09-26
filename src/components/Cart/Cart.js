@@ -18,7 +18,7 @@ const Cart = (props) => {
         </h4>
         <h5>
           <FontAwesomeIcon className="me-2 text-warning" icon={faCoins} />
-          Total Cost: $ {total}
+          Total Earnings: $ {total}
         </h5>
       </div>
 

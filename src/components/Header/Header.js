@@ -18,7 +18,7 @@ const Header = () => {
       </p>
       <h5>
         <FontAwesomeIcon className="me-2 text-warning" icon={faDollarSign} />
-        Total Budget: <span className="fw-bold">2000 million dollar</span>
+        Total Budget: <span className="fw-bold">2000 million dollars</span>
       </h5>
     </div>
   );
