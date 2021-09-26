@@ -3,11 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
 const Singer = (props) => {
-  console.log(props.singerInfo);
+  // console.log(props.singerInfo);
   const { name, occupation, age, country, earnings, photo } = props.singerInfo;
   return (
-    <div className="col-md-4 my-5">
-      <div className="card" style={{ width: "18rem" }}>
+    <div className="col-md-4 mb-5">
+      <div className="card" style={{ width: "19rem" }}>
         <img src={photo} className="card-img-top img-thumbnail" alt="..." />
         <div className="card-body">
           <h5 className="card-title">{name}</h5>
@@ -24,7 +24,10 @@ const Singer = (props) => {
           <p className="card-text">
             <span className="fw-bold">Earnings :</span> $ {earnings}
           </p>
-          <button className="btn btn-secondary">
+          <button
+            onClick={() => props.handleAddToCart(props.singerInfo)}
+            className="btn btn-secondary"
+          >
             <FontAwesomeIcon className="me-2" icon={faShoppingCart} />
             Add to cart
           </button>
